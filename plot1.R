@@ -21,7 +21,7 @@ Feb <- subset(household_data, Date >= as.Date("2007-02-01") & Date <= as.Date("2
 #
 # plot 1 
 # 
-hist(Feb$Global_active_power, col = "red", xlab = "Global Active Power (kilowatt)")
+hist(Feb$Global_active_power, col = "red", xlab = "Global Active Power (kilowatt)", main = "Global Active Power")
 dev.copy(png, file="plot1.png", width=480, height=480)
 dev.off()
 
